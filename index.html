@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image_style2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .container {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .box3 {
+            margin-top: 20px;
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            border: 3px solid rgb(145, 142, 142);
+            transition: .5s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .box3:hover {
+            border: 3px solid blue;
+
+        }
+
+        .img {
+            background-image: url(image/j.jpg);
+            background-size: cover;
+
+        }
+
+        .img1 {
+            background-image: url(image/2.png);
+            background-size: cover;
+
+        }
+
+        .img2 {
+            background-image: url(image/3.webp);
+            background-size: cover;
+        }
+
+        .img3 {
+            background-image: url(image/1.jpg);
+            background-size: cover;
+
+        }
+
+        .innerbox img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .innerbox {
+            height: 300px;
+            width: 300px;
+            background-color: white;
+            position: absolute;
+            right: 300px;
+            transition: .5s;
+
+        }
+
+        .innerbox1 {
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            right: 0px;
+            transition: .5s;
+
+        }
+
+        .innerbox h1 {
+            padding: 100px 10px 70px 125px;
+        }
+
+        h1 {
+            font-size: 21px;
+            color: blue;
+        }
+
+        small {
+            font-size: 16px;
+            color: black;
+        }
+
+        i {
+            color: rgb(0, 4, 255);
+        }
+
+        .innerbox p {
+            padding-left: 30px;
+        }
+
+        .box3:hover .innerbox {
+            right: 110px;
+        }
+
+        .box3:hover .innerbox1 {
+            right: -160px;
+        }
+
+        /*2nd contaner*/
+        .container1 {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .box3-1 {
+            margin-top: 20px;
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            border: 3px solid rgb(138, 24, 24, .1);
+            transition: 0.7s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .box3-1 img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            transition: 0.7s;
+
+        }
+
+        .innerboxs {
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            bottom: -300px;
+            transition: .5s;
+
+        }
+
+        .innerboxs h1 {
+            padding: 20px 70px;
+            text-align: center;
+        }
+
+        .box3-1:hover .innerboxs {
+            top: 130px;
+        }
+
+        .box3-1:hover {
+
+            border: 3px solid red;
+
+        }
+
+        .box3-1:hover img {
+            transform: scale(.4);
+            margin-top: -80px;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<div class="container">
+    <div class="box3 img">
+        <div class="innerbox1 img"></div>
+
+        <div class="innerbox">
+            <h1>
+                Md MoinuDdin
+                <small> Software Developer</small>
+                <p> <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i> <i class="fa-brands fa-instagram"></i>
+                </p>
+            </h1>
+        </div>
+
+
+    </div>
+    <div class="box3 img1">
+        <div class="innerbox1 img1"></div>
+        <div class="innerbox">
+            <h1>
+                Maimun Nisha
+                <small>Website Developer</small>
+                <p> <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i> <i class="fa-brands fa-instagram"></i>
+                </p>
+            </h1>
+        </div>
+    </div>
+    <div class="box3 img3">
+        <div class="innerbox1 img2"></div>
+        <div class="innerbox">
+            <h1>
+                Md MohiyuDdin
+                <small>Frontend-Developer </small>
+                <p> <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i> <i class="fa-brands fa-instagram"></i>
+                </p>
+            </h1>
+        </div>
+
+    </div>
+    <div class="box3 img2">
+        <div class="innerbox1 img3"></div>
+        <div class="innerbox ">
+            <h1>
+                Momina Khatoon
+                <small>Backend-Developer </small>
+                <p> <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i> <i class="fa-brands fa-instagram"></i>
+                </p>
+            </h1>
+        </div>
+    </div>
+
+</div>
+<!--2nd container-->
+<div class="container1">
+    <div class="box3-1">
+        <img src="image/b11.png" alt="">
+        <div class="innerboxs ">
+            <h1>
+                Md MoinuDdin
+                <small> Software Developer</small>
+                <p> <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i> <i class="fa-brands fa-instagram"></i>
+                </p>
+            </h1>
+        </div>
+    </div>
+    <div class="box3-1">
+        <img src="image/t3.jpg" alt="">
+        <div class="innerboxs ">
+            <h1>
+                Maimun Nisha
+                <small>Website Developer</small>
+                <p> <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i> <i class="fa-brands fa-instagram"></i>
+                </p>
+            </h1>
+        </div>
+    </div>
+    <div class="box3-1">
+        <img src="image/t2.jpg" alt="">
+        <div class="innerboxs ">
+            <h1>
+                Md MohiyuDdin
+                <small>Frontend-Developer </small>
+                <p> <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i> <i class="fa-brands fa-instagram"></i>
+                </p>
+            </h1>
+        </div>
+    </div>
+    <div class="box3-1">
+        <img src="image/t1.jpg" alt="">
+        <div class="innerboxs ">
+            <h1>
+                Momina Khatoon
+                <small>Backend-Developer </small>
+                <p> <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i> <i class="fa-brands fa-instagram"></i>
+                </p>
+            </h1>
+        </div>
+    </div>
+
+</div>
+</html>
